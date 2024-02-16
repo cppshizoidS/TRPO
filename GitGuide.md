@@ -103,7 +103,8 @@ cat  ~/.ssh/id_rsa.pub
 
 -   Запушить(загрузить) изменения на удаленную репу:
 
-```git push --set-upstream origin lab1``` (git push комманда для загруки --set-upstream origin <branch-name>) например branch-name в нашей лабе название ветки это lab1
+```git push --set-upstream origin lab1``` (git push комманда для загруки --set-upstream origin <branch-name>) например branch-name в нашей лабе название ветки это 
+Или же ```git push -u origin lab``` (-u тоже самое что --set-upstream)
 
 -   Скачать изменения с удаленного репозитория ```git pull origin <ветка>``` в лабе вместо <ветка> будет lab1
 ### Ветвление
