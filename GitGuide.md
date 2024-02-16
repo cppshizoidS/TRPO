@@ -74,16 +74,16 @@ cat  ~/.ssh/id_rsa.pub
 -   Посмотреть истории изменений(коммитов):  ```git log```
 ![](https://lh7-us.googleusercontent.com/ysHjHOdZYS-Kl58aQ2A9HWnJyzvxffO9X2ke20saRQT18Vg550D_s1Pyb99v4udqC2xBu3JjrHPAyhNIAL79IFMfaa5XsSPo0ifFuSW5nIrYLXr70X2LpIbYRAMbWP_fTVji1QAX-SK9VRVhiQ_OlxQ)
 
-- Флаги для ```git log ```
-``` git log --graph ``` - отображает граф с ветвлениями и историей мержа
+### Флаги для ```git log ```
+- ``` git log --graph ``` - отображает граф с ветвлениями и историей мержа
 
-``` git log --online ``` - печатает каждый коммит в одну строку
+- ``` git log --online ``` - печатает каждый коммит в одну строку
 
-``` git log --since/--until ``` - ограничение вывод по времени 
+- ``` git log --since/--until ``` - ограничение вывод по времени 
 
-``` git log -p ``` - показывает патч каждого коммита
+-``` git log -p ``` - показывает патч каждого коммита
 
-``` git log --stat ``` - показывает статистику об измененных файлах
+-``` git log --stat ``` - показывает статистику об измененных файлах
 
 
 - 	Чтобы откатить изменения без их сохранения ```git reset--hard HEAD~1``` 
