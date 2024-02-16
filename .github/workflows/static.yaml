@@ -31,7 +31,7 @@ jobs:
           node-version: "20" 
       - name: Build
         run: |
-          npm i markdown-it
+          npm i markdown-it-footnote
           npm i -g @diplodoc/cli
           yfm -i . -o Dist
       - name: Setup Pages
