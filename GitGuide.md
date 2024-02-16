@@ -116,34 +116,34 @@ cat  ~/.ssh/id_rsa.pub
 
 Допустим у вас есть ветка master вам нужно создать ветку с фиксом hotfix
 
-``` git checkout -b hotfix ```
+- ``` git checkout -b hotfix ```
 
 Производите изменения
-``` git commit -a -m 'added hotfix' ```
+ -``` git commit -a -m 'added hotfix' ```
 
 Переключаетесь на master
-``` git checkout master```
+- ``` git checkout master```
 
 Проводите слияние веток
-``` git merge hotfix ```
+- ``` git merge hotfix ```
 
 Удаление ветки после хотфикса
-``` git branch -d hotfix ```
+- ``` git branch -d hotfix ```
 
 #### Управление ветками
-``` git branch ``` - вывод списка всех веток
+- ``` git branch ``` - вывод списка всех веток
 
-``` git branch --merged ``` - вывод влитых веток
+- ``` git branch --merged ``` - вывод влитых веток
 
-``` git branch --no-merged ``` - вывод еще не влитых веток
+- ``` git branch --no-merged ``` - вывод еще не влитых веток
 
-``` git branch --move old-branch-name new-branch-name ``` - переименование веток(локально)
+- ``` git branch --move old-branch-name new-branch-name ``` - переименование веток(локально)
 
-``` git push --set-upstream origin new-branch-name ``` - пуш переименования ветки
+- ``` git push --set-upstream origin new-branch-name ``` - пуш переименования ветки
 
-``` git push origin --delete old-branch-name ``` - удаление старой ветки со старым названием
+- ``` git push origin --delete old-branch-name ``` - удаление старой ветки со старым названием
 
-``` git branch --all ``` - вывод всех веток
+- ``` git branch --all ``` - вывод всех веток
 
 ### Merge and Rebase
 
@@ -158,15 +158,15 @@ cat  ~/.ssh/id_rsa.pub
 При переписывании истории коммиты получают новые идентификаторы, что может вызвать проблемы при работе в тиме, если кто-то уже использовал старые идентификаторы.
 
 ### Переключаемся на целевую ветку, например, master
-``` git checkout master ``` -  переключаемся на master
+- ``` git checkout master ``` -  переключаемся на master
 
-``` git rebase feature-branch ``` - применяем коммиты из master на feacture-branch
+- ``` git rebase feature-branch ``` - применяем коммиты из master на feacture-branch
 
-``` git rebase --continue ``` - продолжит ребейз не смотря на конфлиты
+- ``` git rebase --continue ``` - продолжит ребейз не смотря на конфлиты
 
-``` git checkout feature-branch ``` - переключаемся на ветку с фичей которую ребейзим
+- ``` git checkout feature-branch ``` - переключаемся на ветку с фичей которую ребейзим
 
-``` git rebase new-base-branch ``` -  завершаем ребейз на новой ветке
+- ``` git rebase new-base-branch ``` -  завершаем ребейз на новой ветке
 
 ## gitignore 
 
