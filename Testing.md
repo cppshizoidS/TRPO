@@ -77,7 +77,7 @@ return  RUN_ALL_TESTS();
 ```
 
 
-### Основные макросы [GTest](https://google.github.io/googletest/primer.html):
+###Основные макросы [GTest](https://google.github.io/googletest/primer.html):
 
 Google Test (GTest) предоставляет различные макросы для написания тестов в C++. Вот основные макросы, которые часто используются при написании тестов с использованием GTest:
 
