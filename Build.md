@@ -148,7 +148,6 @@ clean:
 Чтобы запустить исполняемый файл нужно выполнить `./<название_исполняемого_файла>`
 Название исполняемого файла можно узнать посмотрев в файл CMakeLists.txt на строчку ```project()```
 
-[^1]: Лично я предпочитаю ninja потому что он быстрее собирает
 
 
 ## Простейший CMakeLists.txt для сборки проекта на C++
@@ -232,4 +231,4 @@ include_directories("../MyStaticLibrary")
 target_link_libraries(exampleStatic mystatilib)
 ```
 
-Документация по [cmake](https://cmake.org/documentation/)
+[^1]: Лично я предпочитаю ninja потому что он быстрее собирает
