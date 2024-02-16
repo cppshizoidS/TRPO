@@ -1,13 +1,13 @@
 # Тестирование
 
-### Введение в тестирование
+## Введение в тестирование
 Модульное тестирование в C++ с использованием [Google Test](https://google.github.io/googletest) и CMake:
 
   
 Модульное тестирование в C++ является важной практикой разработки программного обеспечения, позволяющей проверить корректность работы отдельных функций или модулей кода. В контексте модульного тестирования, минимальной тестируемой единицей является функция. Писать тесты удобно в отдельных файлах, где для каждой тестируемой функции создается соответствующий файл с тестами.
 
 
-Шаблон проекта с использованием CMake:
+## Шаблон проекта с использованием CMake:
 
 Создайте структуру каталогов для вашего проекта. Предположим, у вас есть следующая структура каталогов:
 
@@ -75,7 +75,7 @@ return  RUN_ALL_TESTS();
 
 ```
 
-### Основные макросы [GTest](https://google.github.io/googletest/primer.html):
+## Основные макросы [GTest](https://google.github.io/googletest/primer.html):
 Google Test (GTest) предоставляет различные макросы для написания тестов в C++. Вот основные макросы, которые часто используются при написании тестов с использованием GTest:
 
 ```cpp
@@ -92,7 +92,7 @@ TEST(MathTest, Addition)  {
 // ASSERT_ или EXPECT_ макросы используются для проверки условий
 }
 ```
-### ASSERT_ и EXPECT_ макросы:
+## ASSERT_ и EXPECT_ макросы:
 Используются для проверки условий в тестах. Если условие не выполняется, ASSERT_ вызывает завершение теста, а EXPECT_ продолжает выполнение теста.
 
 ```cpp
@@ -109,7 +109,7 @@ ASSERT_EQ(expected, actual) и EXPECT_EQ(expected, actual)
 
 ```
 
-### Проверка на равенство.
+## Проверка на равенство.
 
 ```cpp
 ASSERT_NE(val1, val2) и EXPECT_NE(val1, val2)
@@ -117,13 +117,13 @@ ASSERT_NE(val1, val2) и EXPECT_NE(val1, val2)
 
   
 
-### Проверка на неравенство.
+## Проверка на неравенство.
 
 ```cpp
 ASSERT_TRUE(condition) и EXPECT_TRUE(condition)
 ```
 
-### Проверка на истинность.
+## Проверка на истинность.
 
 ```cpp
 
@@ -131,7 +131,7 @@ ASSERT_FALSE(condition) и EXPECT_FALSE(condition)
 
 ```
 
-### Проверка на ложность.
+## Проверка на ложность.
 
 ```cpp
 
@@ -139,7 +139,7 @@ ASSERT_THROW(statement, exception_type) и EXPECT_THROW(statement, exception_typ
 
 ```
 
-### Проверка, что выполнение statement генерирует исключение определенного типа.
+## Проверка, что выполнение statement генерирует исключение определенного типа.
 
 ```cpp
 ASSERT_THROW(throwAnException(), MyException);
@@ -147,7 +147,7 @@ ASSERT_THROW(throwAnException(), MyException);
 ASSERT_NO_THROW(statement) и EXPECT_NO_THROW(statement)
 ```
 
-### Проверка, что выполнение statement не генерирует исключение.
+## Проверка, что выполнение statement не генерирует исключение.
 
 ```cpp
 
@@ -157,7 +157,7 @@ ASSERT_STREQ(expected_str, actual_str) и EXPECT_STREQ(expected_str, actual_str)
 
 ```
 
-### Проверка, что две строки равны.
+## Проверка, что две строки равны.
 
 ```cpp
 ASSERT_STREQ("hello", myString.c_str());
@@ -165,7 +165,7 @@ ASSERT_STREQ("hello", myString.c_str());
 ASSERT_LT(val1, val2) и EXPECT_LT(val1, val2)
 ```
 
-### Проверка, что val1 меньше val2.
+## Проверка, что val1 меньше val2.
 
 ```cpp
 ASSERT_LT(2,  5);
@@ -173,7 +173,7 @@ ASSERT_LT(2,  5);
 ASSERT_GT(val1, val2) и EXPECT_GT(val1, val2)
 ```
 
-### Проверка, что val1 больше val2.
+## Проверка, что val1 больше val2.
 
 ```cpp
 ASSERT_GT(5,  2);
