@@ -131,7 +131,7 @@ ASSERT_FALSE(condition) и EXPECT_FALSE(condition)
 
 ```
 
-### Проверка на ложность.
+* Проверка на ложность.
 
 ```cpp
 
