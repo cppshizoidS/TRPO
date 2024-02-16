@@ -126,17 +126,13 @@ ASSERT_TRUE(condition) и EXPECT_TRUE(condition)
 * Проверка на истинность.
 
 ```cpp
-
 ASSERT_FALSE(condition) и EXPECT_FALSE(condition)
-
 ```
 
 * Проверка на ложность.
 
 ```cpp
-
 ASSERT_THROW(statement, exception_type) и EXPECT_THROW(statement, exception_type)
-
 ```
 
 * Проверка, что выполнение statement генерирует исключение определенного типа.
@@ -150,11 +146,9 @@ ASSERT_NO_THROW(statement) и EXPECT_NO_THROW(statement)
 * Проверка, что выполнение statement не генерирует исключение.
 
 ```cpp
-
 ASSERT_NO_THROW(doSomething());
 
 ASSERT_STREQ(expected_str, actual_str) и EXPECT_STREQ(expected_str, actual_str)
-
 ```
 
 * Проверка, что две строки равны.
