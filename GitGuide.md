@@ -126,7 +126,7 @@ cat  ~/.ssh/id_rsa.pub
 - ``` git checkout -b hotfix ```
 
 Производите изменения
- -``` git commit -a -m 'added hotfix' ```
+- ``` git commit -a -m 'added hotfix' ```
 
 Переключаетесь на master
 - ``` git checkout master```
