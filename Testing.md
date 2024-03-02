@@ -102,7 +102,7 @@ TEST(MathTest, Addition)  {
 
 ASSERT_EQ(expected, actual); // Проверка на равенство
 
-ASSERT_NE(val1, val2); // Проверка на неравенство
+ASSERT_NE(expected, actual); // Проверка на неравенство
 
 ASSERT_TRUE(condition); // Проверка на true
 
@@ -112,20 +112,28 @@ ASSERT_EQ(expected, actual) и EXPECT_EQ(expected, actual)
 
 ```
 
-* Проверка на равенство.
+* Проверка на равенство
+```cpp
+ASSERT_EQ(val1, val2) и EXPECT_EQ(val1, val2)
+
+```
+
+* Проверка на неравенство.
 
 ```cpp
 ASSERT_NE(val1, val2) и EXPECT_NE(val1, val2)
 ```
 
 
-* Проверка на неравенство.
+* ASSERT_TRUE(condition):
+Если условие `condition` оценивается как ложное (false), то тест завершается сразу, и остальные проверки внутри теста не выполняются.
+Если условие истинное (true), то тест продолжается.
 
 ```cpp
 ASSERT_TRUE(condition) и EXPECT_TRUE(condition)
 ```
 
-* Проверка на истинность.
+* Проверка на ложность.
 
 ```cpp
 ASSERT_FALSE(condition) и EXPECT_FALSE(condition)
@@ -140,20 +148,31 @@ ASSERT_THROW(statement, exception_type) и EXPECT_THROW(statement, exception_typ
 * Проверка, что выполнение statement генерирует исключение определенного типа.
 
 ```cpp
-ASSERT_THROW(throwAnException(), MyException);
-
-ASSERT_NO_THROW(statement) и EXPECT_NO_THROW(statement)
+ASSERT_THROW(statement, exception_type) и EXPECT_THROW(statement, exception_type)
 ```
 
 * Проверка, что выполнение statement не генерирует исключение.
 
 ```cpp
-ASSERT_NO_THROW(doSomething());
+ASSERT_THROW(throwAnException(), MyException);
 
-ASSERT_STREQ(expected_str, actual_str) и EXPECT_STREQ(expected_str, actual_str)
+ASSERT_NO_THROW(statement) и EXPECT_NO_THROW(statement)
+ASSERT_NO_THROW(doSomething());
 ```
 
 * Проверка, что две строки равны.
+
+ASSERT_STREQ и EXPECT_STREQ - это макросы в библиотеке тестирования GTest (Google Test), предназначенные для сравнения двух строк.
+
+```cpp
+ASSERT_STREQ(expected_str, actual_str) 
+EXPECT_STREQ(expected_str, actual_str)
+```
+
+* Соответсвие строк
+
+Этот код используется для утверждения, что строка, представленная как myString.c_str(), точно соответствует строке "hello".
+Этот код используется для утверждения, что строка, представленная как myString.c_str(), точно соответствует строке "hello".
 
 ```cpp
 ASSERT_STREQ("hello", myString.c_str());
