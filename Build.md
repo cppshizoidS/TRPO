@@ -11,10 +11,10 @@
 # Проверка типа дистрибутива
 if [ -x "$(command -v apt-get)" ]; then
     sudo apt-get update
-    sudo apt-get install -y build-essential neofetch git clang clang-tools gcc cmake make ninja-build lld lldb valgrind clang-format
+    sudo apt-get install -y build-essential neofetch git clang clang-tools gcc cmake make ninja-build lld lldb valgrind clang-format gtest
 
 elif [ -x "$(command -v dnf)" ]; then
-    sudo dnf install -y @development-tools neofetch git clang clang-tools-extra gcc cmake make ninja-build lld lldb valgrind
+    sudo dnf install -y @development-tools neofetch git clang clang-tools-extra gcc cmake make ninja-build lld lldb valgrind gtest
 
 
 else
