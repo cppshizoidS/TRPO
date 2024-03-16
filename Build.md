@@ -312,3 +312,4 @@ include_directories("../MyStaticLibrary")
 # А также указываем зависимость от статической библиотеки
 target_link_libraries(exampleStatic mystatilib)
 ```
+[Шаблон проекта использующего cmake](https://github.com/cppshizoidS/cmake_boilerplate)
