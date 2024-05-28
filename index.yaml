@@ -16,3 +16,6 @@ links:
 - title: Гайд по тестированию
   description: Гайд по тестированию кода на C/C++
   href: Testing.md
+- title: Экзамен
+  description: Ответы на вопросы к экзамену
+  href: Exam.md
