@@ -559,3 +559,10 @@ git push origin main --force
 
 `git rebase new-base-branch` - завершаем ребейз на новой ветке
 
+Ссылки:
+```
+https://smartiqa.ru/courses/git/lesson-5
+https://learngitbranching.js.org/
+https://git-scm.com/book/en/v2
+https://git-scm.com/videos
+```
