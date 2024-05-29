@@ -405,6 +405,10 @@ git push origin main --force
 
 ``` git push --set-upstream origin new-branch```
 
+Или можно использовать флаг `-u`:
+
+``` git push -u origin new-branch```
+
 После чтобы запушить в ветку которая была указана выполните:
 
 ``` git push ```
