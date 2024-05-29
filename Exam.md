@@ -405,6 +405,10 @@ git push origin main --force
 
 ``` git push --set-upstream origin new-branch```
 
+После чтобы запушить в ветку которая была указана выполните:
+
+``` git push ```
+
 ## 12. git модель ветвления
 - `master` ветка должна всегда быть готова к развертыванию.
 - Все изменения вносятся через feature-ветки (pull-request + merge).
